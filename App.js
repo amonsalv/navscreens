@@ -5,8 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import Contacts from './screens/Contacts';
-
-
+import Login from './screens/Login';
 
 const Stack = createNativeStackNavigator(); //Definir las rutas de cada componente
 
@@ -16,6 +15,7 @@ export default function App() {
       <Stack.Navigator initialRouteName='Home'>
 
         <Stack.Screen name="Home" component={HomeScreen} options={{title:'Inicio'}} />
+        <Stack.Screen name="Login" component={LoginScreen} options={{title:'Login'}} />
         <Stack.Screen name="Profile" component={ProfileScreen} options={{title:'Perfil del Usuario'}}/>
         <Stack.Screen name="Contacts" component={Contacts} options={{title:'Contactenos'}}/>
 
