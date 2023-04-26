@@ -1,13 +1,7 @@
 node_modules/
 .expo/
 dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mleprovision
-*.o
+
 
 # macOS
 .DS_Store
